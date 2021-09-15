@@ -13,7 +13,7 @@
 - $ git config --global user.email "이메일주소"
  
 - $ git status     => 현재 로컬폴더와 git과의 싱크 상태를 체크
-- $ git add -A     => 로컬 폴더의 모든 파일을 git의 타임캡슐에 는다
+- $ git add -A     => 로컬 폴더의 모든 파일을 git의 타임캡슐에 담는다
 - $ git status     => 상태를 체크
 - $ git commit -m "first commit"    => 인식할 수 있는 commit을 달아준다 (타임캡슐1을 묻는다)
 - $ git status     =>  확인하면 nothing to commit,  (더이상 묻을 캡슐이 없다)
@@ -22,11 +22,13 @@
 
 --------------------------------------------------------------------------------------------------------
 
-*과거로 돌아가기 - reset
+**과거로 돌아가기 - reset
+
 -복원할 여지없이 그 이후는 완전히 삭제
   $ git reset 일련번호6자리(git log시 일련번호) --hard  
 
-*과거로 돌아가기 - revert
+**과거로 돌아가기 - revert
+
 -과거로 돌아갔다가 다시 돌아올 수 있는 방법
 -돌아갈 시점이 아닌 취소할 시점을 선택한다
   $ git revert 일련번호6자리(git log시 일련번호) 
@@ -36,17 +38,19 @@
 ----------------------------------------------------------------------------
 <Branch>
 
-$ git branch my-job 
-$ git branch          =>   master , my-job  두개의 branch가 보여진다
-$ git checkout my-job       =>  git checkout branch명  (다른 branch로 이동)
+$ git branch branch명 
+$ git branch          =>   master , branch명  두개의 branch가 보여진다
+$ git checkout branch명       => 다른 branch로 이동
 $ git branch
-
+  
+$ git log --graph --all --decorate  => branch log 시각화
+  
 -------------------------------------------------------------------------
 <Merge>
 
 $ git checkout master    =>  master branch로 이동
 $ git branch
-$ git merge my-job   =>   master branch 에서 my-job branch 의 내용을 가져와 병합한다
+$ git merge branch명   =>   master branch 에서 branch명 branch 의 내용을 가져와 병합한다
 
 --------------------------------------------
 
