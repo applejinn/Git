@@ -22,12 +22,12 @@
 
 --------------------------------------------------------------------------------------------------------
 
-** 과거로 돌아가기 - reset
+## 과거로 돌아가기 - reset
 
 - 복원할 여지없이 그 이후는 완전히 삭제
   - $ git reset 일련번호6자리(git log시 일련번호) --hard  
 
-** 과거로 돌아가기 - revert
+## 과거로 돌아가기 - revert
 
 - 과거로 돌아갔다가 다시 돌아올 수 있는 방법
 - 돌아갈 시점이 아닌 취소할 시점을 선택한다
@@ -36,7 +36,7 @@
  
 
 ----------------------------------------------------------------------------
-** Branch
+## Branch
 
 - $ git branch branch명 
 - $ git branch          =>   master , branch명  두개의 branch가 보여진다
@@ -46,7 +46,7 @@
 - $ git log --graph --all --decorate  => branch log 시각화
   
 -------------------------------------------------------------------------
-** Merge
+## Merge
 
 - $ git checkout master    =>  master branch로 이동
 - $ git branch
@@ -57,10 +57,10 @@
 ## Git Hub Desktop 사용
 https://desktop.github.com/
 
-## Git 명령어
-$ git init   => 지정한 폴더안에 .git폴더가 생성된다
+--------------------------------------------------------------------------------------
+- $ git init   => 지정한 폴더안에 .git폴더가 생성된다
 
-** Push 할때
+## Push 할때
 
 - $ git remote add origin 주소  =>git repository와 연결
 
@@ -72,8 +72,7 @@ $ git init   => 지정한 폴더안에 .git폴더가 생성된다
 
 - $ git push origin +master  => 실제로 Git에 PUSH
 
-
-** Pull 할때
+## Pull 할때
 
 가져올 폴더 생성
 - $ git init
@@ -81,7 +80,7 @@ $ git init   => 지정한 폴더안에 .git폴더가 생성된다
 - $ git pull origin master  => 원격저장소에 파일을 로컬저장소로 가져온다
 
 
-** git에 더 최신 내용이 있을때
+## git에 더 최신 내용이 있을때
 
 - $ git pull origin master 를 사용하여 최신 내용을 가져온 후
 - $ git push origin +master 을 사용하여 git에 올린다
