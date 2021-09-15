@@ -46,7 +46,7 @@
 - $ git log --graph --all --decorate  => branch log 시각화
   
 -------------------------------------------------------------------------
-<Merge>
+**Merge
 
 - $ git checkout master    =>  master branch로 이동
 - $ git branch
@@ -73,7 +73,7 @@ $ git init   => 지정한 폴더안에 .git폴더가 생성된다
 - $ git push origin +master  => 실제로 Git에 PUSH
 
 
-*Pull 할때
+**Pull 할때
 
 가져올 폴더 생성
 - $ git init
@@ -81,7 +81,7 @@ $ git init   => 지정한 폴더안에 .git폴더가 생성된다
 - $ git pull origin master  => 원격저장소에 파일을 로컬저장소로 가져온다
 
 
-*git에 더 최신 내용이 있을때...
+**git에 더 최신 내용이 있을때...
 
 - $ git pull origin master 를 사용하여 최신 내용을 가져온 후
 - $ git push origin +master 을 사용하여 git에 올린다
