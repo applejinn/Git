@@ -36,12 +36,12 @@
  
 
 ----------------------------------------------------------------------------
-<Branch>
+**Branch
 
 $ git branch branch명 
 $ git branch          =>   master , branch명  두개의 branch가 보여진다
 $ git checkout branch명       => 다른 branch로 이동
-$ git branch
+$ git branch -D branch명      => branch 삭제
   
 $ git log --graph --all --decorate  => branch log 시각화
   
